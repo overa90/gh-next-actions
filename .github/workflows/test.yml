@@ -6,7 +6,8 @@ jobs:
   build:
     runs-on: ubuntu-latest
     strategy:
-      matrix: node:['16']
+      matrix:
+        node: ['16']
     steps:
       - uses: actions/checkout@v2
       - name: Setup Node 16
